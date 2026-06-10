@@ -6,9 +6,7 @@ This page shows how to open the Java visual editor and build a small program usi
 
 The Java editor is typically opened from within the SemiBlock / NewBlock platform (similar to the Three.js and Flowchart editors). It loads the bundled Blockly application from:
 
-```
-public/blockly-java/build-production
-```
+![](img/javaEditor.png){width=100%}
 
 After the bundle loads, a global `quantr` object is available with helper methods (`clearWorkspace`, `saveWS`, `load`, `getWS`, `getCode`).
 
@@ -71,20 +69,8 @@ As soon as you place or edit blocks, the right-hand pane updates:
 
 Example generated output for a minimal program:
 
-```java
-public class HelloWorld {
-public static void main(String args[]){
-System.out.println("Hello from blocks");
-}
-}
-```
 
-## Persistence
-
-- The workspace is saved automatically on every non-UI change to `localStorage` key `mainWorkspace`.
-- Use the host page **Save** button (calls `quantr.saveWS()`) to obtain a serialized JSON string.
-- Use **Load** (calls `quantr.load(json)`) to restore a previous state.
-- `quantr.getWS()` returns the current serialized state; `quantr.getCode()` returns only the generated Java text.
+![](img/helloWorld.png){width=100%}
 
 ## Tips
 

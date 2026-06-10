@@ -2,6 +2,8 @@
 
 SemiBlock Java is a visual, block-based programming environment for writing Java code. It is built on Blockly 11 and provides a rich toolbox of Java-oriented blocks for classes, methods, control flow, database access, and more. Code is generated in real time as Java source and can be inspected or executed in a host application.
 
+![](img/overview.png){width=100%}
+
 ## Key Features
 
 - **Blockly canvas** with the custom `quantr` theme, zelos renderer, 20-pixel snap grid, and trashcan.
